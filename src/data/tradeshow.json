@@ -1,0 +1,50 @@
+[
+  {
+    "price": "$85,000.00",
+    "modelLabel": "Tradeshow Model A",
+    "title": "Modern Tiny Home Showcase",
+    "location": "Las Vegas, Nevada, USA",
+    "beds": 2,
+    "sleeps": 4,
+    "kitchen": 1,
+    "agent": "Showcase Events",
+    "propertyFor": "Auction",
+    "type": "Tiny home"
+  },
+  {
+    "price": "$120,000.00",
+    "modelLabel": "Luxury Container",
+    "title": "Eco-Friendly Container Home",
+    "location": "Austin, Texas, USA",
+    "beds": 3,
+    "sleeps": 5,
+    "kitchen": 2,
+    "agent": "Green Living",
+    "propertyFor": "Auction",
+    "type": "Container home"
+  },
+  {
+    "price": "$60,000.00",
+    "modelLabel": "Compact Living",
+    "title": "Minimalist Mobile Home",
+    "location": "Portland, Oregon, USA",
+    "beds": 1,
+    "sleeps": 2,
+    "kitchen": 1,
+    "agent": "Tiny Spaces",
+    "propertyFor": "Sale",
+    "type": "Mobile home"
+  },
+  {
+    "price": "$95,500.00",
+    "modelLabel": "Modular Unit",
+    "title": "Smart Modular Home",
+    "location": "Seattle, Washington, USA",
+    "beds": 2,
+    "sleeps": 4,
+    "kitchen": 1,
+    "agent": "Future Homes",
+    "propertyFor": "Auction",
+    "type": "Modular home"
+  }
+]

@@ -1,0 +1,26 @@
+[
+  {
+    "price": "$75,000.00",
+    "modelLabel": "Auction Lot A",
+    "title": "Modern Modular Unit",
+    "location": "Dallas, Texas, USA",
+    "beds": 2,
+    "sleeps": 4,
+    "kitchen": 1,
+    "agent": "Trypto Business Solutions",
+    "propertyFor": "Auction",
+    "type": "Modular home"
+  },
+  {
+    "price": "$99,500.00",
+    "modelLabel": "Auction Lot B",
+    "title": "Container Loft Deluxe",
+    "location": "Phoenix, Arizona, USA",
+    "beds": 3,
+    "sleeps": 6,
+    "kitchen": 1,
+    "agent": "Lauren Fresquez",
+    "propertyFor": "Auction",
+    "type": "Container home"
+  }
+]

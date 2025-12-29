@@ -1,0 +1,122 @@
+[
+  {
+    "price": "$110,000.00",
+    "modelLabel": "CUSTOM CONTAINER",
+    "title": "MAKE YOUR DREAM CONTAINER...",
+    "location": "Sacramento, California, EE. UU.",
+    "beds": 3,
+    "sleeps": 3,
+    "kitchen": 2,
+    "agent": "Lauren Fresquez",
+    "propertyFor": "Sale",
+    "type": "Container home"
+  },
+  {
+    "price": "$65,890.00",
+    "modelLabel": "Container Loft",
+    "title": "Box Containers Solutions",
+    "location": "Sacramento, California, EE. UU.",
+    "beds": 1,
+    "sleeps": 1,
+    "kitchen": 1,
+    "agent": "Lauren Fresquez",
+    "propertyFor": "Sale",
+    "type": "Container home"
+  },
+  {
+    "price": "$54,450.00",
+    "modelLabel": "Tiny home",
+    "title": "Weather King Potable Buildings",
+    "location": "14770 E Colossal Cave Rd, Vail, AZ, USA",
+    "beds": 2,
+    "sleeps": 4,
+    "kitchen": 1,
+    "agent": "Trypto Business Solutions",
+    "propertyFor": "Sale",
+    "type": "Tiny home"
+  },
+  {
+    "price": "$86,900.00",
+    "modelLabel": "SP8CEZT881D",
+    "title": "OMA.haus double deck SP8CE...",
+    "location": "1 Scotts Road, Singapore",
+    "beds": 2,
+    "sleeps": 4,
+    "kitchen": 1,
+    "agent": "Trypto Business Solutions",
+    "propertyFor": "Sale",
+    "type": "Modular home"
+  },
+  {
+    "price": "$42,900.00",
+    "modelLabel": "20 FT CABIN",
+    "title": "Box Container Solutions",
+    "location": "Sacramento, California, EE. UU.",
+    "beds": 0,
+    "sleeps": 0,
+    "kitchen": 0,
+    "agent": "Lauren Fresquez",
+    "propertyFor": "Sale",
+    "type": "Container home"
+  },
+  {
+    "price": "$65,450.00",
+    "modelLabel": "40 FT DUPLEX",
+    "title": "Box Container Solutions",
+    "location": "Sacramento, California 95811, EE. UU.",
+    "beds": 2,
+    "sleeps": 2,
+    "kitchen": 2,
+    "agent": "Lauren Fresquez",
+    "propertyFor": "Sale",
+    "type": "Container home"
+  },
+  {
+    "price": "$71,489.00",
+    "modelLabel": "291ft.² Florida Tiny House on Wheels",
+    "title": "A Prefab Tiny Home",
+    "location": "63 Broadway, Albany, New York 12204, USA",
+    "beds": 3,
+    "sleeps": 8,
+    "kitchen": 1,
+    "agent": "Trypto Business Solutions",
+    "propertyFor": "Sale",
+    "type": "Tiny home"
+  },
+  {
+    "price": "$79,750.00",
+    "modelLabel": "797ft.² Luxury Premier Collection",
+    "title": "A Prefab Tiny Home",
+    "location": "63 Broadway, Albany, New York 12204, USA",
+    "beds": 3,
+    "sleeps": 8,
+    "kitchen": 1,
+    "agent": "Trypto Business Solutions",
+    "propertyFor": "Sale",
+    "type": "Tiny home"
+  },
+  {
+    "price": "$77,000.00",
+    "modelLabel": "Linkable 7",
+    "title": "Neovita",
+    "location": "1225 Price Plaza Drive, Katy, TX, USA",
+    "beds": 1,
+    "sleeps": 4,
+    "kitchen": 1,
+    "agent": "Trypto Business Solutions",
+    "propertyFor": "Sale",
+    "type": "Modular home"
+  },
+  {
+    "price": "$52,800.00",
+    "modelLabel": "CP7S",
+    "title": "OMA.haus CP7S",
+    "location": "1 Scotts Road, Singapore",
+    "beds": 1,
+    "sleeps": 2,
+    "kitchen": 1,
+    "agent": "Trypto Business Solutions",
+    "propertyFor": "Sale",
+    "type": "Modular home"
+  }
+]
