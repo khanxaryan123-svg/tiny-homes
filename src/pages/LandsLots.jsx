@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom'
 import CustomSelect from '../components/CustomSelect'
 import tinyHome1 from './tiny home 1.jpg'
 import landsLotsData from '../data/landsLots.json'
+import rentDetailData from '../data/rentDetail.json'
 
 export default function LandsLots() {
+  const rentProperty = rentDetailData[0]
   const [keyword, setKeyword] = useState('')
   const [landFor, setLandFor] = useState('')
   const [price, setPrice] = useState('')
