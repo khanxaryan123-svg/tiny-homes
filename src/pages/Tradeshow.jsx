@@ -337,23 +337,22 @@ export default function Tradeshow() {
         <div className="mt-6 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
           <h2 className="text-lg font-semibold text-[#777777] mb-4">Rent Properties</h2>
           <div className="grid grid-cols-1 gap-6">
-            <Link to="/rent/true-north" className="rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-900 block">
+            <Link to={`/rent/${rentProperty.id}`} className="rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-900 block group">
               <div className="relative">
                 <img
                   src={tinyHome1}
-                  alt="TRUE NORTH"
-                  className="w-full h-56 object-cover opacity-90"
+                  alt={rentProperty.title}
+                  className="w-full h-56 object-cover opacity-90 group-hover:scale-105 transition-transform duration-300"
                 />
-                <span className="absolute top-4 left-4 bg-yellow-400 text-white text-sm font-medium px-3 py-1 rounded-md">For Rent</span>
+                <span className="absolute top-4 left-4 bg-[#F5A623] text-white text-sm font-medium px-4 py-1.5 rounded-lg shadow-sm">For Rent</span>
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-4 left-4 right-4 flex flex-col">
-                  <div className="text-white text-2xl font-bold">$220.00 <span className="text-base font-medium">/mo</span></div>
-                  <div className="text-white text-lg font-semibold tracking-wide">TRUE NORTH</div>
+                  <div className="text-white text-2xl font-bold">{rentProperty.price} <span className="text-base font-medium">{rentProperty.priceUnit || '/mo'}</span></div>
+                  <div className="text-white text-lg font-semibold tracking-wide">{rentProperty.title}</div>
                 </div>
               </div>
             </Link>
           </div>
-          
         </div>
       </aside>
 
@@ -365,7 +364,7 @@ export default function Tradeshow() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="py-1 px-2 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="py-1 px-2 rounded-md bg-white border-none focus:outline-none focus:ring-2 focus:ring-yellow-500"
             >
               <option>Keyword</option>
               <option>Highest Price</option>
@@ -402,9 +401,9 @@ export default function Tradeshow() {
                     <span>Sleeps: {item.sleeps}</span>
                     <span>Kitchen: {item.kitchen}</span>
                   </div>
-                  <div className="mt-4 border-t border-gray-200 pt-3 text-sm">
+                  <div className="mt-4 border-t border-gray-200 pt-3 text-sm flex flex-col gap-1">
                     <span className="text-yellow-600 font-medium">Listed by:</span>
-                    <span className="ml-1 text-gray-800">{item.agent}</span>
+                    <span className="text-gray-800">{item.agent}</span>
                   </div>
                 </div>
               </div>

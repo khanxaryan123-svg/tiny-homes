@@ -364,7 +364,7 @@ export default function Auction() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="py-1 px-2 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="py-1 px-2 rounded-md bg-white border-none focus:outline-none focus:ring-2 focus:ring-yellow-500"
             >
               <option>Keyword</option>
               <option>Highest Price</option>
@@ -401,9 +401,9 @@ export default function Auction() {
                     <span>Sleeps: {item.sleeps}</span>
                     <span>Kitchen: {item.kitchen}</span>
                   </div>
-                  <div className="mt-4 border-t border-gray-200 pt-3 text-sm">
+                  <div className="mt-4 border-t border-gray-200 pt-3 text-sm flex flex-col gap-1">
                     <span className="text-yellow-600 font-medium">Listed by:</span>
-                    <span className="ml-1 text-gray-800">{item.agent}</span>
+                    <span className="text-gray-800">{item.agent}</span>
                   </div>
                 </div>
               </div>

@@ -139,7 +139,24 @@ export default function LandsLots() {
         </div>
 
         <div className="mt-6 bg-white rounded-xl shadow-sm border border-gray-200 p-6">
-          <h2 className="text-lg font-semibold text-[#777777]">Lands/Lots For Rent</h2>
+          <h2 className="text-lg font-semibold text-[#777777] mb-4">Rent Properties</h2>
+          <div className="grid grid-cols-1 gap-6">
+            <Link to={`/rent/${rentProperty.id}`} className="rounded-xl overflow-hidden shadow-sm border border-gray-200 bg-gray-900 block group">
+              <div className="relative">
+                <img
+                  src={tinyHome1}
+                  alt={rentProperty.title}
+                  className="w-full h-56 object-cover opacity-90 group-hover:scale-105 transition-transform duration-300"
+                />
+                <span className="absolute top-4 left-4 bg-[#F5A623] text-white text-sm font-medium px-4 py-1.5 rounded-lg shadow-sm">For Rent</span>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 right-4 flex flex-col">
+                  <div className="text-white text-2xl font-bold">{rentProperty.price} <span className="text-base font-medium">{rentProperty.priceUnit || '/mo'}</span></div>
+                  <div className="text-white text-lg font-semibold tracking-wide">{rentProperty.title}</div>
+                </div>
+              </div>
+            </Link>
+          </div>
         </div>
       </aside>
 
@@ -151,7 +168,7 @@ export default function LandsLots() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="py-1 px-2 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="py-1 px-2 rounded-md bg-white border-none focus:outline-none focus:ring-2 focus:ring-yellow-500"
             >
               <option>Keyword</option>
               <option>Highest Price</option>
@@ -181,9 +198,9 @@ export default function LandsLots() {
                     <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /><span>City: {item.city}</span></div>
                     <div className="flex items-start gap-2"><MapPin className="h-4 w-4" /><span>Address: {item.address}</span></div>
                   </div>
-                  <div className="mt-4 border-t border-gray-200 pt-3 text-sm">
+                  <div className="mt-4 border-t border-gray-200 pt-3 text-sm flex flex-col gap-1">
                     <span className="text-yellow-600 font-medium">Listed by:</span>
-                    <span className="ml-1 text-gray-800">{item.listedBy}</span>
+                    <span className="text-gray-800">{item.listedBy}</span>
                   </div>
                 </div>
               </div>
