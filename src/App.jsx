@@ -3,6 +3,7 @@ import { Routes, Route } from 'react-router-dom'
 import Auction from './pages/Auction'
 import TinyHomes from './pages/TinyHomes'
 import RentDetail from './pages/RentDetail'
+import PropertyDetail from './pages/PropertyDetail'
 import LandsLots from './pages/LandsLots'
 import Tradeshow from './pages/Tradeshow'
 
@@ -33,7 +34,8 @@ function App() {
             path="/account"
             element={<div className="text-xl font-semibold text-gray-800">My Account</div>}
           />
-          <Route path="/rent/true-north" element={<RentDetail />} />
+          <Route path="/rent/:id" element={<RentDetail />} />
+          <Route path="/property/:id" element={<PropertyDetail />} />
         </Routes>
       </main>
     </div>

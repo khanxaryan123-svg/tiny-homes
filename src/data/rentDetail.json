@@ -1,32 +1,50 @@
-{
-  "price": "$220.00",
-  "priceUnit": "/day",
-  "title": "TRUE NORTH",
-  "location": "5738 Highway 3, Haldimand County, ON, Canada - NOA 1E0",
-  "listedBy": {
-    "name": "Trypto Business Solutions",
-    "email": "claude@tbsolutions.io",
-    "phone": "7025774877",
-    "id": "796970"
-  },
-  "details": {
-    "propertySize": "330 sqft",
-    "propertyType": "Foundations",
-    "dimensions": "11*11 *30",
-    "year": "2023",
-    "make": "True North Tiny Homes",
-    "model": "11",
-    "sleeps": 2,
-    "kitchen": 1,
-    "beds": 1
-  },
-  "amenities": [
-    "Convertible Furniture",
-    "Built-in Cabinets and Shelving",
-    "Tankless Water Heater"
-  ],
-  "description": [
-    "Get away from it all, and enjoy time away. Spend time in the country, with all the comforts of home (and then some!).",
-    "This is a high end studio apartment tiny home. There is no separate bedroom, but a murphy bed instead, giving you a place to sleep at night, and a living space during the day."
-  ]
-}
+[
+  {
+    "id": "true-north",
+    "price": "$220.00",
+    "priceUnit": "/day",
+    "title": "TRUE NORTH",
+    "location": "5738 Highway 3, Haldimand County, ON, Canada - NOA 1E0",
+    "listedBy": {
+      "name": "Trypto Business Solutions",
+      "email": "claude@tbsolutions.io",
+      "phone": "7025774877",
+      "id": "796970"
+    },
+    "details": {
+      "propertySize": "330 sqft",
+      "propertyType": "Foundations",
+      "dimensions": "11*11 *30",
+      "year": "2023",
+      "make": "True North Tiny Homes",
+      "model": "11",
+      "sleeps": 2,
+      "kitchen": 1,
+      "beds": 1
+    },
+    "amenities": [
+      "Convertible Furniture",
+      "Built-in Cabinets and Shelving",
+      "Tankless Water Heater",
+      "Mini Split HVAC",
+      "Ceiling Fans",
+      "Living Space",
+      "Lawns",
+      "Metal roof",
+      "Wood Frame",
+      "Washer Dryer Hookups",
+      "Full size kitchen",
+      "Full size refrigerator"
+    ],
+    "description": [
+      "Get away from it all, and enjoy time away. Spend time in the country, with all the comforts of home (and then some!). Pet / feed the animals, enjoy a campfire, walk the trails through the fields and the forest. Take an adventure outing at one of our suggested venues, or pick one of you own.",
+      "This is a high end studio apartment tiny home. There is no separate bedroom, but a murphy bed instead, giving you a place to sleep at night, and a living space during the day.",
+      "There is a full bathroom with large walk-in shower, and a vanity that overlooks the fields. The toilet is composting, so be sure to follow the instructions!",
+      "The entire space has heated floors as the main source of heat, so it's super cozy!",
+      "Enjoy the deck out back, where you can have a private campfire. Or have a larger campfire with us!",
+      "We have recently added a hot tub and air conditioning, and we have a barbecue on the way.",
+      "Try it before you buy it! This tiny home is at the same location where True North Tiny Homes builds their homes. If you're lucky, you can tour some other tiny homes under construction while you're here.",
+      "* This home is one of our model homes, and is always for sale. If you want, take the whole house home with you!"
+    ]
+  }
+]

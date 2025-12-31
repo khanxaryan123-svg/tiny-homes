@@ -1,5 +1,6 @@
 [
   {
+    "id": "1",
     "price": "$110,000.00",
     "modelLabel": "CUSTOM CONTAINER",
     "title": "MAKE YOUR DREAM CONTAINER...",
@@ -12,6 +13,7 @@
     "type": "Container home"
   },
   {
+    "id": "2",
     "price": "$65,890.00",
     "modelLabel": "Container Loft",
     "title": "Box Containers Solutions",
@@ -24,6 +26,7 @@
     "type": "Container home"
   },
   {
+    "id": "3",
     "price": "$54,450.00",
     "modelLabel": "Tiny home",
     "title": "Weather King Potable Buildings",
@@ -36,6 +39,7 @@
     "type": "Tiny home"
   },
   {
+    "id": "4",
     "price": "$86,900.00",
     "modelLabel": "SP8CEZT881D",
     "title": "OMA.haus double deck SP8CE...",
@@ -48,6 +52,7 @@
     "type": "Modular home"
   },
   {
+    "id": "5",
     "price": "$42,900.00",
     "modelLabel": "20 FT CABIN",
     "title": "Box Container Solutions",
@@ -60,6 +65,7 @@
     "type": "Container home"
   },
   {
+    "id": "6",
     "price": "$65,450.00",
     "modelLabel": "40 FT DUPLEX",
     "title": "Box Container Solutions",
@@ -72,6 +78,7 @@
     "type": "Container home"
   },
   {
+    "id": "7",
     "price": "$71,489.00",
     "modelLabel": "291ft.² Florida Tiny House on Wheels",
     "title": "A Prefab Tiny Home",
@@ -84,6 +91,7 @@
     "type": "Tiny home"
   },
   {
+    "id": "8",
     "price": "$79,750.00",
     "modelLabel": "797ft.² Luxury Premier Collection",
     "title": "A Prefab Tiny Home",
@@ -96,27 +104,16 @@
     "type": "Tiny home"
   },
   {
+    "id": "9",
     "price": "$77,000.00",
     "modelLabel": "Linkable 7",
-    "title": "Neovita",
-    "location": "1225 Price Plaza Drive, Katy, TX, USA",
-    "beds": 1,
-    "sleeps": 4,
-    "kitchen": 1,
-    "agent": "Trypto Business Solutions",
-    "propertyFor": "Sale",
-    "type": "Modular home"
-  },
-  {
-    "price": "$52,800.00",
-    "modelLabel": "CP7S",
-    "title": "OMA.haus CP7S",
-    "location": "1 Scotts Road, Singapore",
+    "title": "Linkable 7",
+    "location": "United States",
     "beds": 1,
     "sleeps": 2,
     "kitchen": 1,
     "agent": "Trypto Business Solutions",
     "propertyFor": "Sale",
-    "type": "Modular home"
+    "type": "Tiny home"
   }
 ]

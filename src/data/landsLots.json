@@ -1,5 +1,6 @@
 [
   {
+    "id": "hassell-duplexes",
     "price": "$330,000.00",
     "title": "Hassell Duplexes",
     "state": "Nevada",
@@ -9,6 +10,7 @@
     "propertyFor": "Sale"
   },
   {
+    "id": "american-eagle-rv",
     "price": "$6,050,000.00",
     "title": "American Eagle RV & Resorts",
     "state": "NV",

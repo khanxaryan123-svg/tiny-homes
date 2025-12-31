@@ -1,5 +1,6 @@
 [
   {
+    "id": "tradeshow-1",
     "price": "$85,000.00",
     "modelLabel": "Tradeshow Model A",
     "title": "Modern Tiny Home Showcase",
@@ -12,6 +13,7 @@
     "type": "Tiny home"
   },
   {
+    "id": "tradeshow-2",
     "price": "$120,000.00",
     "modelLabel": "Luxury Container",
     "title": "Eco-Friendly Container Home",
@@ -24,6 +26,7 @@
     "type": "Container home"
   },
   {
+    "id": "tradeshow-3",
     "price": "$60,000.00",
     "modelLabel": "Compact Living",
     "title": "Minimalist Mobile Home",
@@ -36,6 +39,7 @@
     "type": "Mobile home"
   },
   {
+    "id": "tradeshow-4",
     "price": "$95,500.00",
     "modelLabel": "Modular Unit",
     "title": "Smart Modular Home",

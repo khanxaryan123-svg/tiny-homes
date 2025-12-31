@@ -151,7 +151,7 @@ export default function LandsLots() {
             <select
               value={sortBy}
               onChange={(e) => setSortBy(e.target.value)}
-              className="py-1 px-2 rounded-md border border-gray-300 bg-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
+              className="py-1 px-2 rounded-md bg-white focus:outline-none focus:ring-2 focus:ring-yellow-500"
             >
               <option>Keyword</option>
               <option>Highest Price</option>
@@ -163,29 +163,31 @@ export default function LandsLots() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {sortedResults.map((item, idx) => (
-            <div key={idx} className="rounded-2xl overflow-hidden shadow-sm border border-gray-200 bg-white">
-              <div className="relative">
-                <img src={tinyHome1} alt={item.title} className="w-full h-48 object-cover" />
-                <span className="absolute top-3 left-3 bg-yellow-300 text-gray-900 text-xs font-semibold px-3 py-1 rounded-md">Sale</span>
-                <button type="button" className="absolute bottom-3 right-3 w-9 h-9 rounded-lg bg-black/50 backdrop-blur text-white flex items-center justify-center">
-                  <Heart className="h-5 w-5" />
-                </button>
-                <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent"></div>
-                <div className="absolute bottom-3 left-3 text-white text-2xl font-bold">{item.price}</div>
-              </div>
-              <div className="p-4">
-                <div className="text-gray-900 font-semibold">{item.title}</div>
-                <div className="mt-2 space-y-1 text-sm text-[#777777]">
-                  <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /><span>State: {item.state}</span></div>
-                  <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /><span>City: {item.city}</span></div>
-                  <div className="flex items-start gap-2"><MapPin className="h-4 w-4" /><span>Address: {item.address}</span></div>
+            <Link to={`/property/${item.id}`} key={idx} className="block group">
+              <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-200 bg-white hover:shadow-md transition-shadow h-full">
+                <div className="relative">
+                  <img src={tinyHome1} alt={item.title} className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300" />
+                  <span className="absolute top-3 left-3 bg-[#F5A623] text-white text-sm font-medium px-4 py-1.5 rounded-lg shadow-sm">Sale</span>
+                  <button type="button" className="absolute bottom-3 right-3 w-9 h-9 rounded-lg bg-black/50 backdrop-blur text-white flex items-center justify-center z-10 hover:bg-black/70">
+                    <Heart className="h-5 w-5" />
+                  </button>
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent pointer-events-none"></div>
+                  <div className="absolute bottom-3 left-3 text-white text-2xl font-bold">{item.price}</div>
                 </div>
-                <div className="mt-4 border-t border-gray-200 pt-3 text-sm">
-                  <span className="text-yellow-600 font-medium">Listed by:</span>
-                  <span className="ml-1 text-gray-800">{item.listedBy}</span>
+                <div className="p-4">
+                  <div className="text-gray-900 font-semibold group-hover:text-yellow-600 transition-colors">{item.title}</div>
+                  <div className="mt-2 space-y-1 text-sm text-[#777777]">
+                    <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /><span>State: {item.state}</span></div>
+                    <div className="flex items-center gap-2"><MapPin className="h-4 w-4" /><span>City: {item.city}</span></div>
+                    <div className="flex items-start gap-2"><MapPin className="h-4 w-4" /><span>Address: {item.address}</span></div>
+                  </div>
+                  <div className="mt-4 border-t border-gray-200 pt-3 text-sm">
+                    <span className="text-yellow-600 font-medium">Listed by:</span>
+                    <span className="ml-1 text-gray-800">{item.listedBy}</span>
+                  </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </section>
