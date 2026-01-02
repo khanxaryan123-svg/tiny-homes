@@ -127,7 +127,7 @@ export default function TinyHomes() {
     const text = `${item.title} ${item.modelLabel} ${item.location}`.toLowerCase()
     const keywordOk = keyword ? text.includes(keyword.toLowerCase()) : true
     const propertyOk = propertyFor ? item.propertyFor === propertyFor : true
-    const typeOk = type ? item.type === type : true
+    const typeOk = type ? item.type && item.type.toLowerCase() === type.toLowerCase() : true
     const bedsOk = beds ? item.beds === Number(beds) : true
     const sleepsOk = sleeps ? item.sleeps === Number(sleeps) : true
     const priceNum = toNum(item.price)
@@ -217,7 +217,7 @@ export default function TinyHomes() {
             <CustomSelect
               value={type}
               onChange={setType}
-              options={['Tiny home', 'Container home', 'Modular home']}
+              options={['Small Tiny', 'Foundations', 'Wheels', 'Tumbleweed', 'Granny Pods', 'Small Mobile Homes', 'Small Motorhomes', 'Arched Cabins', 'Gypsy Wagons', 'Tiny House Shed', 'Tiny Cabin', 'Underground Homes', 'Fifth Wheel', 'Container Home']}
               placeholder="Property Type"
             />
           </div>
