@@ -1,7 +1,19 @@
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { MapPin, Mail, Phone, User as UserIcon, Ruler, Home, Calendar, Building2, Users, Bed, CookingPot, ListChecks, Facebook, Linkedin, MessageCircle, PencilRuler, X, Wind, Fan, Armchair, Trees, Hammer, WashingMachine, Refrigerator, Utensils, Factory, Square, Sofa, Library, Heater, AirVent, Frame, ChefHat, Bus, Container, BedDouble, IdCard } from 'lucide-react'
+import { MapPin, Mail, Phone, User as UserIcon, Ruler, Home, Calendar, Building2, Users, Bed, CookingPot, ListChecks, Facebook, Linkedin, MessageCircle, PencilRuler, X, Wind, Fan, Armchair, Trees, Hammer, WashingMachine, Refrigerator, Utensils, Factory, Square, Sofa, Library, Heater, AirVent, Frame, ChefHat, Bus, Container, BedDouble, IdCard, Heart, Play } from 'lucide-react'
 import tinyHome1 from './tiny home 1.jpg'
+import tinyHome2 from './tiny home 2.jpg'
+import tinyHome3 from './tiny home 3.jpg'
+import tinyHome4 from './tiny home 4.jpg'
+import tinyHome5 from './tiny home 5.jpg'
+import tinyHome6 from './tiny home 6.jpg'
+import tinyHome7 from './tiny home 7.jpg'
+import tinyHome8 from './tiny home 8.jpg'
+import tinyHome9 from './tiny home 9.jpg'
+import tinyHome10 from './tiny home 10.jpg'
+import tinyHome11 from './tiny home 11.jpg'
+import tinyHome12 from './tiny home 12.jpg'
+import tinyHome13 from './tiny home 13.jpg'
 import rentDetailData from '../data/rentDetail.json'
 import tinyHomesData from '../data/tinyHomes.json'
 
@@ -32,6 +44,50 @@ export default function RentDetail() {
 
   return (
     <div className="flex flex-col gap-12 pb-12 pt-8">
+      {/* Image Gallery */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Main Image */}
+        <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden group">
+          <img src={tinyHome1} alt={data.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <button className="absolute top-4 right-4 p-2.5 bg-black/50 hover:bg-black/70 rounded-lg text-white transition-colors backdrop-blur-sm">
+            <Heart className="h-6 w-6" />
+          </button>
+        </div>
+
+        {/* Right Side Grid */}
+        <div className="flex flex-col gap-4 h-[400px] md:h-[500px]">
+          {/* Top Video/Image */}
+          <div className="relative flex-1 rounded-2xl overflow-hidden group cursor-pointer">
+            <img src={tinyHome2} alt="Property Video" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="relative flex items-center justify-center">
+                <div className="absolute w-24 h-24 bg-[#F5A623]/30 rounded-full animate-pulse"></div>
+                <div className="relative w-16 h-16 bg-[#F5A623] rounded-full flex items-center justify-center text-white pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+                  <Play className="h-8 w-8 text-white" strokeWidth={2} />
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          {/* Bottom Thumbnails */}
+          <div className="grid grid-cols-3 gap-4 h-1/3">
+            <div className="rounded-xl overflow-hidden cursor-pointer hover:opacity-95 transition-opacity">
+              <img src={tinyHome3} alt="Interior view 1" className="w-full h-full object-cover" />
+            </div>
+            <div className="rounded-xl overflow-hidden cursor-pointer hover:opacity-95 transition-opacity">
+              <img src={tinyHome4} alt="Interior view 2" className="w-full h-full object-cover" />
+            </div>
+            <div className="relative rounded-xl overflow-hidden cursor-pointer group">
+              <img src={tinyHome5} alt="More photos" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-white font-medium text-lg backdrop-blur-[2px] group-hover:bg-black/60 transition-colors">
+                +8 more
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 xl:grid-cols-5 gap-12">
         <div className="xl:col-span-3 space-y-8">
           {/* Header Info */}
