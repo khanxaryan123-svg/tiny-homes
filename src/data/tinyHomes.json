@@ -10,7 +10,8 @@
     "kitchen": 2,
     "agent": "Lauren Fresquez",
     "propertyFor": "Sale",
-    "type": "Container home"
+    "type": "Container home",
+    "size": 320
   },
   {
     "id": "2",
@@ -18,12 +19,13 @@
     "modelLabel": "Container Loft",
     "title": "Box Containers Solutions",
     "location": "Sacramento, California, EE. UU.",
-    "beds": 1,
-    "sleeps": 1,
+    "beds": 2,
+    "sleeps": 2,
     "kitchen": 1,
-    "agent": "Lauren Fresquez",
+    "agent": "Sarah Johnson",
     "propertyFor": "Sale",
-    "type": "Container home"
+    "type": "Container home",
+    "size": 150
   },
   {
     "id": "3",

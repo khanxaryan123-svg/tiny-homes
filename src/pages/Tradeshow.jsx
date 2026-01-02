@@ -230,7 +230,7 @@ export default function Tradeshow() {
             <CustomSelect
               value={propertySize}
               onChange={setPropertySize}
-              options={['≤ 200', '200 – 400', '400 – 600', '600+']}
+              options={['0-100', '100-200', '200-500', '500-1000', '1000-2000', 'More Than 2000']}
               placeholder="Property Size"
             />
           </div>

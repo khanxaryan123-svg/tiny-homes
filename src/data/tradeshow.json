@@ -10,7 +10,8 @@
     "kitchen": 1,
     "agent": "Showcase Events",
     "propertyFor": "Auction",
-    "type": "Tiny home"
+    "type": "Tiny home",
+    "size": 450
   },
   {
     "id": "tradeshow-2",
@@ -18,12 +19,13 @@
     "modelLabel": "Luxury Container",
     "title": "Eco-Friendly Container Home",
     "location": "Austin, Texas, USA",
-    "beds": 3,
-    "sleeps": 5,
-    "kitchen": 2,
+    "beds": 1,
+    "sleeps": 2,
+    "kitchen": 1,
     "agent": "Green Living",
-    "propertyFor": "Auction",
-    "type": "Container home"
+    "propertyFor": "Sale",
+    "type": "Container home",
+    "size": 1100
   },
   {
     "id": "tradeshow-3",
