@@ -1,6 +1,10 @@
 import { useParams } from 'react-router-dom'
-import { MapPin, Mail, Phone, User as UserIcon, Bed, CookingPot, Home, Building2, Ruler, Calendar, ListChecks, Facebook, Linkedin, MessageCircle } from 'lucide-react'
+import { MapPin, Mail, Phone, User as UserIcon, Bed, CookingPot, Home, Building2, Ruler, Calendar, ListChecks, Facebook, Linkedin, MessageCircle, Heart, PlayCircle } from 'lucide-react'
 import tinyHome1 from './tiny home 1.jpg'
+import tinyHome2 from './tiny home 2.jpg'
+import tinyHome3 from './tiny home 3.jpg'
+import tinyHome4 from './tiny home 4.jpg'
+import tinyHome5 from './tiny home 5.jpg'
 import tinyHomesData from '../data/tinyHomes.json'
 import auctionData from '../data/auction.json'
 import tradeshowData from '../data/tradeshow.json'
@@ -37,6 +41,47 @@ export default function PropertyDetail() {
 
   return (
     <div className="flex flex-col gap-12 pb-12 pt-8">
+      {/* Image Gallery */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        {/* Main Image */}
+        <div className="relative h-[400px] md:h-[500px] rounded-2xl overflow-hidden group">
+          <img src={tinyHome1} alt={data.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+          <button className="absolute top-4 right-4 p-2.5 bg-black/50 hover:bg-black/70 rounded-lg text-white transition-colors backdrop-blur-sm">
+            <Heart className="h-6 w-6" />
+          </button>
+        </div>
+
+        {/* Right Side Grid */}
+        <div className="flex flex-col gap-4 h-[400px] md:h-[500px]">
+          {/* Top Video/Image */}
+          <div className="relative flex-1 rounded-2xl overflow-hidden group cursor-pointer">
+            <img src={tinyHome2} alt="Property Video" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+            <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors" />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-16 h-16 bg-[#F5A623] rounded-full flex items-center justify-center text-white pl-1 shadow-lg transform group-hover:scale-110 transition-transform">
+                <PlayCircle className="h-8 w-8 fill-current" />
+              </div>
+            </div>
+          </div>
+          
+          {/* Bottom Thumbnails */}
+          <div className="grid grid-cols-3 gap-4 h-1/3">
+            <div className="rounded-xl overflow-hidden cursor-pointer hover:opacity-95 transition-opacity">
+              <img src={tinyHome3} alt="Interior view 1" className="w-full h-full object-cover" />
+            </div>
+            <div className="rounded-xl overflow-hidden cursor-pointer hover:opacity-95 transition-opacity">
+              <img src={tinyHome4} alt="Interior view 2" className="w-full h-full object-cover" />
+            </div>
+            <div className="relative rounded-xl overflow-hidden cursor-pointer group">
+              <img src={tinyHome5} alt="More photos" className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
+              <div className="absolute inset-0 bg-black/50 flex items-center justify-center text-white font-medium text-lg backdrop-blur-[2px] group-hover:bg-black/60 transition-colors">
+                +9 more
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className="grid grid-cols-1 xl:grid-cols-5 gap-12">
         <div className="xl:col-span-3 space-y-8">
           {/* Header Info */}
