@@ -20,8 +20,8 @@ const Header = () => {
           <Link to="/" className="flex items-center gap-3">
             <Home className="h-9 w-9 text-yellow-500" />
             <div className="leading-tight">
-              <div className="text-xs font-semibold tracking-wide text-gray-800">VEGAS TINY HOMES</div>
-              <div className="text-[11px] text-gray-600">Expo & Tradeshow</div>
+              <div className="text-sm font-semibold tracking-wide text-gray-800">VEGAS TINY HOMES</div>
+              <div className="text-xs text-gray-600">Expo & Tradeshow</div>
             </div>
           </Link>
 

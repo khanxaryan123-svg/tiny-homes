@@ -174,7 +174,7 @@ export default function TinyHomes() {
       </div>
 
       <div className="lg:col-span-3">
-        <h1 className="text-3xl font-semibold text-black">Tiny Homes</h1>
+        <h1 className="text-4xl font-normal text-[#333333] tracking-tight uppercase">Tiny Homes</h1>
       </div>
 
       <aside className="lg:col-span-1">

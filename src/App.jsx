@@ -17,7 +17,7 @@ function App() {
             path="/"
             element={
               <div>
-                <h1 className="text-3xl font-bold text-gray-900 mb-4">Welcome to Tiny Homes</h1>
+                <h1 className="text-4xl font-normal text-[#333333] tracking-tight uppercase mb-4">Welcome to Tiny Homes</h1>
                 <p className="text-gray-600">Find your perfect tiny home.</p>
               </div>
             }
