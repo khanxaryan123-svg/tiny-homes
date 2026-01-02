@@ -32,8 +32,8 @@ export default function RentDetail() {
 
   return (
     <div className="flex flex-col gap-12 pb-12 pt-8">
-      <div className="grid grid-cols-1 lg:grid-cols-5 gap-12">
-        <div className="lg:col-span-3 space-y-8">
+      <div className="grid grid-cols-1 xl:grid-cols-5 gap-12">
+        <div className="xl:col-span-3 space-y-8">
           {/* Header Info */}
           <div className="space-y-2">
             <div>
@@ -83,7 +83,7 @@ export default function RentDetail() {
           </div>
         </div>
 
-        <aside className="lg:col-span-2">
+        <aside className="xl:col-span-2">
           <div className="bg-white border border-gray-100 rounded-xl p-8 shadow-lg sticky top-24">
             <h2 className="text-2xl font-normal text-[#333333] mb-6">Home Listed By</h2>
             <hr className="border-gray-100 mb-8" />

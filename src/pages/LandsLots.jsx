@@ -66,8 +66,8 @@ export default function LandsLots() {
         })
 
   return (
-    <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-      <div className="lg:col-span-3 flex items-center justify-between">
+    <div className="grid grid-cols-1 xl:grid-cols-3 gap-6">
+      <div className="xl:col-span-3 flex items-center justify-between">
         <div className="text-sm text-gray-500">
           <Link to="/" className="hover:text-gray-700">Home</Link>
           <span> / </span>
@@ -75,11 +75,11 @@ export default function LandsLots() {
         </div>
       </div>
 
-      <div className="lg:col-span-3">
+      <div className="xl:col-span-3">
         <h1 className="text-4xl font-normal text-[#333333] tracking-tight uppercase">Lands/Lots</h1>
       </div>
 
-      <aside className="lg:col-span-1">
+      <aside className="xl:col-span-1">
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 space-y-4">
           <div>
             <label className="block text-sm font-medium text-[#777777] mb-2">Keyword</label>
@@ -162,7 +162,7 @@ export default function LandsLots() {
         </div>
       </aside>
 
-      <section className="lg:col-span-2 space-y-6">
+      <section className="xl:col-span-2 space-y-6">
         <div className="bg-white rounded-xl shadow-sm border border-gray-200 p-4 flex items-center justify-between">
           <p className="text-[#777777] font-medium">Search results</p>
           <div className="flex items-center gap-2 text-sm">
@@ -180,7 +180,7 @@ export default function LandsLots() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-2 gap-6">
           {sortedResults.map((item, idx) => (
             <Link to={`/property/${item.id}`} key={idx} className="block group">
               <div className="rounded-2xl overflow-hidden shadow-sm border border-gray-200 bg-white hover:shadow-md transition-shadow h-full">
