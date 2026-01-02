@@ -132,10 +132,12 @@ export default function Auction() {
     const sleepsOk = sleeps ? item.sleeps === Number(sleeps) : true
     const priceNum = toNum(item.price)
     let priceOk = true
-    if (price === 'Under $50,000') priceOk = priceNum < 50000
-    else if (price === '$50,000 - $100,000') priceOk = priceNum >= 50000 && priceNum <= 100000
-    else if (price === '$100,000 - $150,000') priceOk = priceNum > 100000 && priceNum <= 150000
-    else if (price === '$150,000+') priceOk = priceNum > 150000
+    if (price === '0-100') priceOk = priceNum >= 0 && priceNum <= 100
+    else if (price === '100-500') priceOk = priceNum > 100 && priceNum <= 500
+    else if (price === '500-2000') priceOk = priceNum > 500 && priceNum <= 2000
+    else if (price === '2000-25000') priceOk = priceNum > 2000 && priceNum <= 25000
+    else if (price === '25000-100000') priceOk = priceNum > 25000 && priceNum <= 100000
+    else if (price === 'More Than 100000') priceOk = priceNum > 100000
     return keywordOk && propertyOk && typeOk && bedsOk && sleepsOk && priceOk
   })
 
@@ -207,7 +209,7 @@ export default function Auction() {
             <CustomSelect
               value={price}
               onChange={setPrice}
-              options={['Under $50,000', '$50,000 - $100,000', '$100,000 - $150,000', '$150,000+']}
+              options={['0-100', '100-500', '500-2000', '2000-25000', '25000-100000', 'More Than 100000']}
               placeholder="Select Price"
             />
           </div>

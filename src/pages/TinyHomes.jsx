@@ -207,7 +207,7 @@ export default function TinyHomes() {
             <CustomSelect
               value={price}
               onChange={setPrice}
-              options={['Under $50,000', '$50,000 - $100,000', '$100,000 - $150,000', '$150,000+']}
+              options={['0-100', '100-500', '500-2000', '2000-25000', '25000-100000', 'More Than 100000']}
               placeholder="Select Price"
             />
           </div>

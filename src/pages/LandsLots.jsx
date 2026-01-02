@@ -109,7 +109,7 @@ export default function LandsLots() {
             <CustomSelect
               value={price}
               onChange={setPrice}
-              options={['Under $500,000', '$500,000 - $1,000,000', '$1,000,000+']}
+              options={['0-100', '100-500', '500-2000', '2000-25000', '25000-100000', 'More Than 100000']}
               placeholder="Select Price"
             />
           </div>
