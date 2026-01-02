@@ -194,88 +194,42 @@ export default function Auction() {
 
           <div>
             <label className="block text-sm font-medium text-[#777777] mb-2">Property For</label>
-            <div className="relative">
-              <select
-                value={propertyFor}
-                onChange={(e) => setPropertyFor(e.target.value)}
-                className="w-full py-3 px-4 rounded-lg border border-gray-300 bg-white appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-500 text-[#777777]"
-              >
-                <option value="">Property For</option>
-                <option>Sale</option>
-                <option>Rent</option>
-                <option>Auction</option>
-              </select>
-              <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none">
-                <svg className="w-3 h-3 text-[#777777] fill-current" viewBox="0 0 12 8">
-                  <path d="M1.41 0.590088L6 5.17009L10.59 0.590088L12 2.00009L6 8.00009L0 2.00009L1.41 0.590088Z" />
-                </svg>
-              </div>
-            </div>
+            <CustomSelect
+              value={propertyFor}
+              onChange={setPropertyFor}
+              options={['Sale', 'Rent', 'Auction']}
+              placeholder="Property For"
+            />
           </div>
 
           <div>
             <label className="block text-sm font-medium text-[#777777] mb-2">Price ($)</label>
-            <div className="relative">
-              <select
-                value={price}
-                onChange={(e) => setPrice(e.target.value)}
-                className="w-full py-3 px-4 rounded-lg border border-gray-300 bg-white appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-500 text-[#777777]"
-              >
-                <option value="">Select Price</option>
-                <option>Under $50,000</option>
-                <option>$50,000 - $100,000</option>
-                <option>$100,000 - $150,000</option>
-                <option>$150,000+</option>
-              </select>
-              <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none">
-                <svg className="w-3 h-3 text-[#777777] fill-current" viewBox="0 0 12 8">
-                  <path d="M1.41 0.590088L6 5.17009L10.59 0.590088L12 2.00009L6 8.00009L0 2.00009L1.41 0.590088Z" />
-                </svg>
-              </div>
-            </div>
+            <CustomSelect
+              value={price}
+              onChange={setPrice}
+              options={['Under $50,000', '$50,000 - $100,000', '$100,000 - $150,000', '$150,000+']}
+              placeholder="Select Price"
+            />
           </div>
 
           <div>
             <label className="block text-sm font-medium text-[#777777] mb-2">Property Type</label>
-            <div className="relative">
-              <select
-                value={type}
-                onChange={(e) => setType(e.target.value)}
-                className="w-full py-3 px-4 rounded-lg border border-gray-300 bg-white appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-500 text-[#777777]"
-              >
-                <option value="">Property Type</option>
-                <option>Tiny home</option>
-                <option>Container home</option>
-                <option>Modular home</option>
-              </select>
-              <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none">
-                <svg className="w-3 h-3 text-[#777777] fill-current" viewBox="0 0 12 8">
-                  <path d="M1.41 0.590088L6 5.17009L10.59 0.590088L12 2.00009L6 8.00009L0 2.00009L1.41 0.590088Z" />
-                </svg>
-              </div>
-            </div>
+            <CustomSelect
+              value={type}
+              onChange={setType}
+              options={['Tiny home', 'Container home', 'Modular home']}
+              placeholder="Property Type"
+            />
           </div>
 
           <div>
             <label className="block text-sm font-medium text-[#777777] mb-2">Property Size (SqFt)</label>
-            <div className="relative">
-              <select
-                value={propertySize}
-                onChange={(e) => setPropertySize(e.target.value)}
-                className="w-full py-3 px-4 rounded-lg border border-gray-300 bg-white appearance-none focus:outline-none focus:ring-2 focus:ring-yellow-500 text-[#777777]"
-              >
-                <option value="">Property Size</option>
-                <option>≤ 200</option>
-                <option>200 – 400</option>
-                <option>400 – 600</option>
-                <option>600+</option>
-              </select>
-              <div className="absolute inset-y-0 right-0 flex items-center px-4 pointer-events-none">
-                <svg className="w-3 h-3 text-[#777777] fill-current" viewBox="0 0 12 8">
-                  <path d="M1.41 0.590088L6 5.17009L10.59 0.590088L12 2.00009L6 8.00009L0 2.00009L1.41 0.590088Z" />
-                </svg>
-              </div>
-            </div>
+            <CustomSelect
+              value={propertySize}
+              onChange={setPropertySize}
+              options={['≤ 200', '200 – 400', '400 – 600', '600+']}
+              placeholder="Property Size"
+            />
           </div>
 
           <div>
